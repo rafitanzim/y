@@ -4,6 +4,7 @@
 <html lang="en">
 
     <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.3/ace.js"></script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,5 +35,18 @@
       
     </footer>
     <script defer src="highlight.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        
+        let editor = document.querySelector("#txtbox");
+
+ace.edit(editor, {
+
+  theme: "ace/theme/cobalt",
+
+  mode: "ace/mode/html",
+
+}); 
+        
+        </script>
 </body>
 </html>
